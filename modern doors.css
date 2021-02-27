@@ -5,12 +5,15 @@
 body, html{
 	height: 100%;
 	min-width: 600px;
-	background-color: #090A24;
+	background-color: #151830;
 }
 
 .heroImage{
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/photos/slide01.png");
 	height: 60%;
+	margin-top: 0px;
+	margin-left: 0px;
+	width: 100%;
 }
 
 .heroText{
@@ -32,6 +35,10 @@ h1 {
 	background-color: beige;
 	padding: 10px;
 	width: 100%;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	float: left;
+	position: absolute;
 }
 
 .gridItem{
