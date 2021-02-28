@@ -271,7 +271,7 @@ img.hover-shadow {
 
 .gridContainerTwo{
 	display: inline-grid;
-	grid-template-columns: 100% 100% 100%;
+	grid-template-columns: auto auto auto;
 	padding: 10px;
 	width: auto;
 	grid-column-gap:5px;
