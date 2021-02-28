@@ -268,3 +268,69 @@ img.hover-shadow {
 	font-size: 30px;
 	text-align: center;
 }
+
+.gridContainerTwo{
+	display: inline-grid;
+	grid-template-columns: 100% 100% 100%;
+	padding: 10px;
+	width: auto;
+	grid-column-gap:5px;
+	grid-row-gap: 50px;
+	float: right;
+	position: absolute;
+	max-width: 1400px;
+	text-align-last: center;
+	height: auto;
+}
+
+.location{
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	background-color: #FF7600;
+	padding: 20px;
+	border-style: groove;
+	border-color: black;
+	max-width: 1400px;
+	height: 100%;
+}
+
+.phoneNumber{
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	background-color: #FF7600;
+	padding: 20px;
+	border-style: groove;
+	border-color: black;
+	max-width: 1400px;
+	height: 100%;
+}
+
+.email{
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	background-color: #FF7600;
+	padding: 20px;
+	border-style: groove;
+	border-color: black;
+	max-width: 1400px;
+	height: 100%;
+}
+
+.hours{
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 4;
+	grid-row-end: 5;
+	background-color: #FF7600;
+	padding: 20px;
+	border-style: groove;
+	border-color: black;
+	max-width: 1400px;
+	height: 100%;
+}
