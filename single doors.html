@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Single Doors</title>
+<link href="modern doors.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="container">
+  		<img src="assets/photos/slide01.png" alt="modern doors" style="width:100%;">
+  		<div class="centered"><h1><i>Modern Iron Doors</i></h1></div>
+	</div>
+	<nav>
+		<h2>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="doors.html">Doors</a></li>
+				<li><a href="contact us.html">Contact Us</a></li>
+				<div class="facebook"> <li><a href="https://www.facebook.com/modernirondoors/"><img src="assets/photos/facebook logo.png" alt="facebook logo"></a></li></div>
+			</ul>
+		</h2>
+	</nav>
+	
+	<div style="font-family: 'Montserrat Black'; font-size: 30px; text-align: center; color: white;">
+		<h2>Here are our single door templates. If you would like to make some changes please contact us to see what we can do.</h2>
+	</div>
+<div class="row">
+	<div class="column">
+    	<img src="assets/photos/ssqua01.png" alt="style one" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  	</div>
+	<div class="column">
+		<img src="assets/photos/ssqua02.png" alt="style two" onclick="openModal();currentSlide(2)" class="hover-shadow">
+	</div>
+	<div class="column">
+    	<img src="assets/photos/ssqua03.png" alt="style three" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  	</div>
+  	<div class="column">
+    	<img src="assets/photos/ssqua04.png" alt="style four" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  	</div>
+</div>
+<div id="myModal" class="modal">
+  	<span class="close cursor" onclick="closeModal()">&times;</span>
+  		<div class="modal-content">
+			<div class="mySlides">
+      	<div class="numbertext">1 / 4</div>
+      <img src="assets/photos/ssqua01.png" alt="style one" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="assets/photos/ssqua02.png" alt="style two" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="assets/photos/ssqua03.png" alt="style three" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="assets/photos/ssqua04.png" alt="style four" style="width:100%">
+    </div>
+		</div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	<div class="caption-container">
+      <h2><p id="caption">Click through to see the different styles we offer.</p></h2>
+    </div>
+	<div class="column">
+      <img class="demo" src="assets/photos/ssqua01.png" onclick="currentSlide(1)" alt="Style One">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="assets/photos/ssqua02.png" onclick="currentSlide(2)" alt="Style Two">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="assets/photos/ssqua03.png" onclick="currentSlide(3)" alt="Style Three">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="assets/photos/ssqua04.png" onclick="currentSlide(4)" alt="Style Four">
+    </div>
+</div>
+	<script>
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</body>
+</html>
