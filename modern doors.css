@@ -6,20 +6,17 @@ body, html{
 	background-color: #151830;
 }
 
-.heroImage{
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/photos/slide01.png");
-	height: 60%;
-	margin-top: 0px;
-	margin-left: 0px;
-	width: 100%;
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
-.heroText{
-	text-align: center;
-	top: 50%;
-	bottom: 50%;
-	position: relative;
-	color: white;
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 h1 {
@@ -64,25 +61,82 @@ li a {
 	text-decoration: none;
 }
 
-.gridContainer{
-	display: inline-grid;
-	grid-template-columns: auto auto auto;
-	background-color: beige;
-	padding: 10px;
-	width: 100%;
-	grid-column-gap: 0px;
-	grid-row-gap: 0px;
-	float: left;
-	position: absolute;
-	max-width: 1400px;
-	border-style: solid;
+.facebook{
+	float: right;
+	border-radius: 50%;
 }
 
-.gridItem{
-	background-color: white;
-	padding: 20px;
-	text-align: center;
-	border-color: black;
-	border-style: solid;
+.gridContainer{
+	display: inline-grid;
+	grid-template-columns: 100% 100% 100%;
+	padding: 10px;
+	width: auto;
+	grid-column-gap:5px;
+	grid-row-gap: 70px;
+	float: right;
+	position: absolute;
 	max-width: 1400px;
+	text-align-last: center;
+}
+
+.gridText{
+	text-align: center;
+	font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif';
+}
+
+.itemOne{
+	grid-column-start: 1;
+	grid-column-end: 3;
+	background-color: #FF7600;
+	padding: 20px;
+	border-style: groove;
+	border-color: black;
+	max-width: 1400px;
+	height: 100%;
+}
+
+.itemTwo{
+	grid-column-start: 3;
+	grid-column-end: 4;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 20px;
+	max-width: 1400px;
+	height: 100%;
+}
+
+.itemThree{
+	background-image: url("assets/photos/05.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 20px;
+	max-width: 1400px;
+	height: 100%;
+}
+
+.itemFour{
+	background-image: url("assets/photos/11.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 20px;
+	max-width: 1400px;
+	height: 100%;
+}
+
+.itemFive{
+	background-image: url("assets/photos/12.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 20px;
+	max-width: 1400px;
+	height: 100%;
+}
+
+.itemSix{
+	background-image: url("assets/photos/06.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 20px;
+	max-width: 1400px;
+	height: 100%;
 }
