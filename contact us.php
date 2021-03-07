@@ -36,15 +36,31 @@
 				<div class="gridText"><h2> Monday-Friday: 9:00-17:00<br>Saturday: 10:00-15:00<br>Sunday: Closed<br>Holidays: By Appointment</h2></div>
 		</div>
 		<div class="emailUs">
-		<form action="mailto:adrianna.aleman22@outlook.com" method="post" enctype="multipart/form-data" name="emailForm">
-			<h2>Name:</h2>
-			<input type="text" size="50" name="name"><br>
-			<h2>Phone Number:</h2>
-			<input type="text" size="50" name="phoneNumber"><br>
-			<h2>E-mail:</h2>
-			<input type="text" size="50" name="email"><br>
-			Message:<br> <textarea name="ContactCommentt" size="50" rows="6" cols="0">
-			</textarea><br> <input type="submit" value="Submit"> </form>
+			
+<form method="post" action="subscriberform.php">
+	<h2><i>Name:</i></h2>
+	<input type="text" size="50" name="name"><br>
+	<h2><i>E-Mail:</i></h2>
+	<input type="text" size="50" name="email"><br>
+	<h2><i>Phone Number:</i></h2>
+	<input type="text" size="50" name="phoneNumber"><br>
+	<h2><i>Message:</i></h2>
+	<textarea size="50" name="message"></textarea><br>
+
+	<input type="submit">
+
+</form>
+		<?php
+
+if($_POST["message"]) {
+
+mail("adrianna.aleman22@outlook.com", "Here is the subject line",
+
+$_POST["insert your message here"]. "From: adrianna.aleman22@outlook.com");
+
+}
+
+?>
 	</div>
 		</div>
 </body>
