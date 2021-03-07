@@ -344,10 +344,12 @@ img.hover-shadow {
 	border-style: solid;
 	border-color: dimgrey;
 	padding: 20px;
-
+	grid-row-start: 1;
+	grid-row-end: 4;
 }
 
 .video{
 	grid-column-start: 1;
 	grid-column-end: 4;
+	text-align: center;
 }
