@@ -334,3 +334,12 @@ img.hover-shadow {
 	max-width: 1400px;
 	height: 100%;
 }
+
+.emailUs{
+	display: grid;
+	text-align: left;
+	float: right;
+	color: white;
+	border-style: solid;
+	border-color: dimgrey;
+}
