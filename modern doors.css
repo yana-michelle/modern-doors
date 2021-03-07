@@ -285,7 +285,7 @@ img.hover-shadow {
 
 .location{
 	grid-column-start: 1;
-	grid-column-end: 4;
+	grid-column-end: 3;
 	grid-row-start: 1;
 	grid-row-end: 2;
 	background-color: #FF7600;
@@ -298,7 +298,7 @@ img.hover-shadow {
 
 .phoneNumber{
 	grid-column-start: 1;
-	grid-column-end: 4;
+	grid-column-end: 3;
 	grid-row-start: 2;
 	grid-row-end: 3;
 	background-color: #FF7600;
@@ -311,7 +311,7 @@ img.hover-shadow {
 
 .email{
 	grid-column-start: 1;
-	grid-column-end: 4;
+	grid-column-end: 3;
 	grid-row-start: 3;
 	grid-row-end: 4;
 	background-color: #FF7600;
@@ -324,7 +324,7 @@ img.hover-shadow {
 
 .hours{
 	grid-column-start: 1;
-	grid-column-end: 4;
+	grid-column-end: 3;
 	grid-row-start: 4;
 	grid-row-end: 5;
 	background-color: #FF7600;
@@ -336,10 +336,13 @@ img.hover-shadow {
 }
 
 .emailUs{
-	display: grid;
+	grid-column-start: 3;
+	grid-column-end: 4;
 	text-align: left;
 	float: right;
 	color: white;
 	border-style: solid;
 	border-color: dimgrey;
+	padding: 20px;
+
 }
