@@ -72,6 +72,9 @@ li a {
 .logo{
 	float: right;
 	border-radius: 25%;
+	border-style: solid;
+	border-color: white;
+	padding: 10px;
 }
 
 .gridContainer{
